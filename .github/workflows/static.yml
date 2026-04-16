@@ -41,3 +41,24 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v5
+
+
+
+            - name: Raw Github Downloader
+  # You may pin to the exact commit or the version.
+  # uses: AcmeSoftwareLLC/github-downloader@03c8229e87b4ca1574a0c122f9f6deca6fec1140
+  uses: AcmeSoftwareLLC/github-downloader@v2.0.1
+  with:
+    # File mappings in JSON format
+    mappings: 
+    # Github repository owner
+    owner: 
+    # Github repository name
+    repo: https://github.com/8epz/encrypted-data-base-system
+    # Github branch / reference
+    ref: # optional, default is main
+    # The repository PAT or GITHUB_TOKEN.
+    token: 
+    # Output directory
+    output-directory: # optional, default is .
+          
